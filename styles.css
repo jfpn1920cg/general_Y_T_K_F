@@ -1,0 +1,40 @@
+body{
+    background: gray;
+}
+
+/*estilizando_menu_de_navegacion*/
+.contenedor_general_1{
+    width: 1366px;
+    height: 35px;
+    background: rgb(192, 192, 192);
+    margin-top: -19.5px;
+    margin-left: -8px;
+}
+.menu_de_navegacion{
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+.inicio{
+    margin-top: -42px;
+    margin-left: 1010px;
+    font-weight: bold;
+}
+.nosotros{
+    margin-top: -35px;
+    margin-left: 1050px;
+    font-weight: bold;
+}
+.contactanos{
+    margin-top: -35px;
+    margin-left: 1150px;
+    font-weight: bold;
+}
+.categorias{
+    margin-top: -35px;
+    margin-left: 1275px;
+    font-weight: bold;
+}
+.seleccionar_opciones{
+    text-decoration: none;
+    color: black;
+}
