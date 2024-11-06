@@ -11,13 +11,144 @@
     <!--estructurando_menu_de_navegacion-->
     <div class="contenedor_general_1">
         <div class="menu_de_navegacion">
-            <h2>general Y.T.K.F</h2>
-            <p class="inicio"><a href="index.html" class="seleccionar_opciones">inicio</a></p>
-            <p class="nosotros"><a href="nosotros.html" class="seleccionar_opciones">nosotros</a></p>
-            <p class="contactanos"><a href="contactanos.html" class="seleccionar_opciones">contactanos</a></p>
-            <p class="categorias"><a href="categorias.html" class="seleccionar_opciones">categorias</a></p>
-            
+            <h1 class="general_y_t_k_f">general Y.T.K.F</h1>
+            <p class="opciones">
+                <input type="text" placeholder="Buscar..." name="query">
+                <button type="submit">Buscar</button>
+                <a href="index.html" class="seleccionar_opcion">inicio</a>
+                <a href="nosotros.html" class="seleccionar_opcion">nosotros</a>
+                <a href="contactanos.html" class="seleccionar_opcion">contactanos</a>
+                <a href="categorias.html" class="seleccionar_opcion">categorias</a>
+            </p>
         </div>
     </div>
+    <!--estructurando_carrusel-->
+    <div class="contenedor_general_2">
+        <div class="slider">
+            <div class="slides">
+                <img src="imagen_1.jpg" class="slide" alt="Imagen 1">
+                <img src="imagen_2.jpg" class="slide" alt="Imagen 2">
+                <img src="imagen_3.jpg" class="slide" alt="Imagen 3">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            <div class="indicators">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+    <!--estructurando_serie_nueva-->
+    <div class="contenedor_general_3">
+        <h3 class="nuevas_series">nueva serie</h3>
+        <div class="categoria">
+            <img src="imagen_3.jpg" alt="Imagen descriptiva" class="categoria-imagen"> <!-- Imagen -->
+            <p class="categoria-parrafo"> <!-- Párrafo con justificación -->
+                Esta es una descripción básica de la categoría. El texto está justificado para tener un formato visual más elegante y alineado en ambos márgenes. Puedes incluir más detalles aquí, describiendo la función o los elementos que representa esta categoría.
+            </p>
+            <button  class="boton-entrar">Entrar</button> <!-- Botón Entrar -->
+        </div>
+    </div>
+    <!--estructurando_serie_anteriores-->
+    <div class="contenedor_general_4">
+        <h3 class="anteriores_series">anteriores series</h3>
+        <div class="categoria_parte_2">
+            <img src="imagen_1.jpg" alt="Imagen descriptiva" class="categoria_imagen_parte_2">
+            <p class="categoria_parrafo_parte_2">
+                Esta es una descripción básica de la categoría. El texto está justificado 
+                para tener un formato visual más elegante y alineado en ambos márgenes. Puedes 
+                incluir más detalles aquí, describiendo la función o los elementos que representa 
+                esta categorías.
+            </p>
+            <p class="categoria_parrafo_parte_2">
+                Esta es una descripción básica de la ca
+            </p>
+            <button class="boton_entrar_parte_2">Entrar</button>
+        </div>
+        <!--estructurando_categoria_3-->
+        <div class="categoria_parte_3">
+            <img src="imagen_2.jpg" alt="Imagen descriptiva" class="categoria_imagen_parte_3">
+            <p class="categoria_parrafo_parte_3">
+                Esta es una descripción básica de la categoría. El texto está justificado 
+                para tener un formato visual más elegante y alineado en ambos márgenes. Puedes 
+                incluir más detalles aquí, describiendo la función o los elementos que representa esta categoría.
+            </p>
+            <p class="categoria_parrafo_parte_2">
+                Esta es una descripción básica de la ca
+            </p>
+            <button class="boton_entrar_parte_3">Entrar</button>
+        </div>
+        <!--estructurando_categoria_4-->
+        <div class="categoria_parte_4">
+            <img src="imagen_4.jpg" alt="Imagen descriptiva" class="categoria_imagen_parte_4">
+            <p class="categoria_parrafo_parte_4">
+                Esta es una descripción básica de la categoría. El texto está justificado 
+                para tener un formato visual más elegante y alineado en ambos márgenes. Puedes 
+                incluir más detalles aquí, describiendo la función o los elementos que representa esta categoría.
+            </p>
+            <p class="categoria_parrafo_parte_2">
+                Esta es una descripción básica de la ca
+            </p>
+            <button class="boton_entrar_parte_4">Entrar</button>
+        </div>
+    </div>
+    <!--estructurando_top_series-->
+    <div class="contenedor_general_5">
+        <h3 class="top_series">top series</h3>
+        <div class="category">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <div class="top-number">1</div>
+                    <img src="imagen_1.jpg" alt="Película 1">
+                </div>
+                <div class="carousel-item">
+                    <div class="top-number">2</div>
+                    <img src="imagen_2.jpg" alt="Película 2">
+                </div>
+                <div class="carousel-item">
+                    <div class="top-number">3</div>
+                    <img src="imagen_4.jpg" alt="Película 3">
+                </div>
+                <div class="carousel-item">
+                    <div class="top-number">4</div>
+                    <img src="imagen_5.jpg" alt="Película 3">
+                </div>
+                
+            </div>
+        </div>
+    <!--estructurando_pie_de_pagina-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Categorías</h3>
+                <ul>
+                    <li>Minecraft</li>
+                    <li>Ark Survival Evolved</li>
+                    <li>The Forest</li>
+                    <li>Grand Theft Auto</li>
+                    <li>Otros</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <ul>
+                    <li>Facebook: <a href="https://facebook.com/generalytkf" target="_blank">generalytkf</a></li>
+                    <li>Instagram: <a href="https://instagram.com/generalytkf" target="_blank">@generalytkf</a></li>
+                    <li>Twitter: <a href="https://twitter.com/generalytkf" target="_blank">@generalytkf</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Nuestro Contacto</h3>
+                <ul>
+                    <li>Correo electrónico: <a href="mailto:generalytkf@gmail.com">generalytkf@gmail.com</a></li>
+                    <li>Teléfono: +57</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-branding">
+            <p>&copy; 2024 General YTKF. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

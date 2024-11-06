@@ -4,37 +4,361 @@ body{
 
 /*estilizando_menu_de_navegacion*/
 .contenedor_general_1{
-    width: 1366px;
-    height: 35px;
-    background: rgb(192, 192, 192);
-    margin-top: -19.5px;
+    margin-top: -9px;
     margin-left: -8px;
+    width: 1357px;
+    height: 55px;
+    background: rgb(170, 170, 170);
 }
-.menu_de_navegacion{
-    margin-left: 5px;
-    font-family: Arial, Helvetica, sans-serif;    
+.general_y_t_k_f{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.inicio{
-    margin-top: -42px;
-    margin-left: 1010px;
+.opciones{
+    margin-top: -50px;
+    margin-left: 650px;
+}
+.seleccionar_opcion{
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-}
-.nosotros{
-    margin-top: -35px;
-    margin-left: 1050px;
-    font-weight: bold;
-}
-.contactanos{
-    margin-top: -35px;
-    margin-left: 1150px;
-    font-weight: bold;
-}
-.categorias{
-    margin-top: -35px;
-    margin-left: 1275px;
-    font-weight: bold;
-}
-.seleccionar_opciones{
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
+}
+input[type="text"] {
+    padding: 5px;
+    font-size: 14px;
+}
+button {
+    padding: 6px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+/*estilizando_carrusel*/
+.slider {
+    width: 1357px;
+    position: relative;
+    margin-top: 1px;
+    margin-left: -8px;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 1357px;
+    height: 400px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.prev, .next {
+    top: 50%;
+    width: 50px;
+    padding: 16px;
+    margin-top: -22px;
+    font-size: 24px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+}
+.prev {
+    left: 17px;
+}
+.next {
+    right: 10px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.indicators {
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    background-color: rgb(187, 187, 187);
+}
+.active {
+    background-color: rgb(112, 112, 112);
+}
+.dot:hover {
+    background-color: rgb(113, 113, 113);
+}
+/*estilizando_serie_nueva*/
+.contenedor_general_3{
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.nuevas_series{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.categoria {
+    margin-top: -15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    height: 420px;
+    text-align: center;
+}
+.categoria-imagen {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.categoria-parrafo {
+    text-align: justify;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    padding: 10px;
+    margin-top: -30px;
+}
+.boton-entrar {
+    color: #000000;
+    margin-top: -50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+/*estilizando_serie_anteriores*/
+.contenedor_general_4{
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.anteriores_series{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.categoria_parte_2 {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    height: 420px;
+    margin-top: -15px;
+    text-align: center;
+}
+.categoria_imagen_parte_2 {
+    max-width: 100%;
+    margin-bottom: 20px;
+    height: auto;
+}
+.categoria_parrafo_parte_2 {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: -30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: rgb(51, 51, 51);
+}
+.boton_entrar_parte_2 {
+    color: #000000;
+    margin-top: -50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+/*estilizando_categoria_3*/
+.categoria_parte_3 {
+    max-width: 300px;
+    height: 420px;
+    margin-top: -420px;
+    margin-left: 310px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+}
+.categoria_imagen_parte_3 {
+    max-width: 100%;
+    margin-bottom: 20px;
+    height: auto;
+}
+.categoria_parrafo_parte_3 {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: -30px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(51, 51, 51);
+}
+.boton_entrar_parte_3 {
+    color: #000000;
+    margin-top: -50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+/*estilizando_categoria_4*/
+.categoria_parte_4 {
+    max-width: 300px;
+    height: 420px;
+    margin-top: -420px;
+    margin-left: 620px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+}
+.categoria_imagen_parte_4 {
+    max-width: 100%;
+    margin-bottom: 20px;
+    height: auto;
+}
+.categoria_parrafo_parte_4 {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: -30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: rgb(51, 51, 51);
+}
+.boton_entrar_parte_4 {
+    color: #000000;
+    margin-top: -50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+/*estilizando_top_series*/
+.contenedor_general_5{
+    margin-left: 1px;
+    margin-top: -10px;
+}
+.top_series {
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.category {
+    margin-top: -15px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    padding: 0 10px; /* Reducimos el padding general */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-item {
+    position: relative;
+    min-width: 250px; /* Ancho mínimo de la imagen */
+    height: 350px; /* Alto fijo para mantener proporciones con el número */
+    margin-right: 5px; /* Reducimos el espacio entre los elementos */
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al contenedor sin distorsión */
+    transition: transform 0.3s;
+}
+
+.carousel-item img:hover {
+    cursor: pointer;
+}
+
+/* Estilo para el número grande sobre la imagen */
+.top-number {
+    position: absolute;
+    top: 5px; /* Reducimos el espacio entre el número y el borde superior */
+    left: 5px; /* Reducimos el espacio lateral */
+    font-size: 160px; /* Número grande */
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.8); /* Blanco con algo de transparencia */
+    z-index: 1;
+}
+
+.carousel-item img {
+    position: relative;
+    z-index: 0; /* Imagen detrás del número */
+}
+
+/*estilizando_pie_de_pagina*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    width: 1668px;
+    left: -320px;
+    bottom: 0;
+    position: relative;
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+}
+.footer-container {
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: 376px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+.footer-section h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.footer-section ul {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.footer-section ul li a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: rgb(255, 255, 255);
+}
+.footer-section ul li a:hover {
+    color: rgb(240, 240, 240);
+}
+.footer-branding {
+    margin-top: 20px;
+    margin-left: 335px;
+    font-size: 14px;
+    opacity: 0.7;
+    text-align: center;
+}
+.footer-branding p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
 }
