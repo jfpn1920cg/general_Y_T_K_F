@@ -16,21 +16,19 @@ body{
     background-color: #fff;
     padding: 10px;
     width: 350px;
-    height: 1550px;
+    height: 380px;
     margin-top: -405px;
 }
-
 h1 {
     margin-top: -5px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/*estilizando_barra_de_busqueda*/
 .busqueda-container {
     display: flex;
     margin-bottom: 25px;
     margin-top: -15px;
 }
-
 .barra-busqueda {
     width: 72%;
     padding: 10px;
@@ -38,7 +36,6 @@ h1 {
     font-size: 16px;
     outline: none;
 }
-
 .boton-buscar {
     padding: 10px;
     background-color: #007bff;
@@ -48,13 +45,119 @@ h1 {
     cursor: pointer;
     font-size: 16px;
 }
+#historico-busquedas ul {
+    padding: 0;
+    list-style: none;
+}
+#historico-busquedas li {
+    background-color: #f1f1f1;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.registro-streamers {
+    width: 94%;
+    height: 217px;
+    margin-top: -15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+}
+.streamer-registrado {
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #333;
+}
+.borrar_busqueda {
+    position: absolute;
+    top: 350px;
+    left: 105px;
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.borrar_busqueda:hover {
+    background-color: #e53935;
+}
+/*estilizando_anuncio_de_squid_craft_games_3*/
+.contenedor_general_desconocido_1{
+    margin-left: 10px;
 
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 727px;
+}
+.main-video {
+    flex: 3;
+    margin-right: 15px;
+}
+.main-video h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+video {
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.playlist {
+    flex: 1;
+    margin-top: 27px;
+    margin-left: -5px;
+}
+.playlist h3 {
+    font-size: 16px;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+.playlist ul {
+    list-style: none;
+}
+.playlist li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 8px;
+}
+.video-thumb {
+    width: 120px;
+    height: 70px;
+    overflow: hidden;
+    margin-top: -20px;
+    margin-bottom: 8px;
+    background-color: #000;
+}
+.v1{
+    margin-left: -421px;
+}
+.video-thumb video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.playlist p {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+}
 .lista-jugadores {
     list-style-type: none;
     padding: 0;
     margin-top: -15px;
 }
-
 .lista-jugadores li {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
@@ -62,9 +165,22 @@ h1 {
     margin-bottom: 10px;
     padding: 10px;
 }
+.descripcion_desconocido{
+    margin-top: -430.5px;
+    margin-left: 900px;
+    width: 430px;
+}
+.squid_craft_games_3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parrafo_desconocido{
+    margin-top: -15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
 /*estilizando_categoria_videos*/
 .contenedor_general_7{
-    margin-top: -725px;
+    margin-top: 950px;
     margin-left: -196px;
 }
 .nuevos_episodios{
@@ -371,7 +487,7 @@ h1 {
     font-size: 16px;
 }
 .ver_mas_parte_2{
-    margin-left: 805px;
+    margin-left: 826px;
     margin-top: 7px;
     font-size: 16px;
     width: 71px;
