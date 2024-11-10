@@ -89,7 +89,6 @@ h1 {
 /*estilizando_anuncio_de_squid_craft_games_3*/
 .contenedor_general_desconocido_1{
     margin-left: 10px;
-
 }
 .container {
     display: flex;
@@ -113,6 +112,7 @@ video {
     flex: 1;
     margin-top: 27px;
     margin-left: -5px;
+    display: none;
 }
 .playlist h3 {
     font-size: 16px;
@@ -139,8 +139,9 @@ video {
     margin-top: -20px;
     margin-bottom: 8px;
     background-color: #000;
+    display: none;
 }
-.v1{
+.v1 {
     margin-left: -421px;
 }
 .video-thumb video {
@@ -166,9 +167,9 @@ video {
     padding: 10px;
 }
 .descripcion_desconocido{
-    margin-top: -430.5px;
-    margin-left: 900px;
-    width: 430px;
+    margin-top: -429px;
+    margin-left: 720px;
+    width: 610px;
 }
 .squid_craft_games_3{
     font-family: Arial, Helvetica, sans-serif;
@@ -177,6 +178,53 @@ video {
     margin-top: -15px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
+}
+.participantes{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 99%;
+    margin-top: -13px;
+    position: relative;
+    overflow: hidden;
+}
+.control {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0px;
+}
+.carousel {
+    display: flex;
+    width: 90%;
+    margin-left: -188px;
+}
+.category {
+    flex: 0 0 auto;
+    width: 350px; 
+    height: 350px;
+    margin-left: -5px;
+    text-align: center;
+}
+.category img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 /*estilizando_categoria_videos*/
 .contenedor_general_7{
