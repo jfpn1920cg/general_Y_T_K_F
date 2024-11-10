@@ -45,10 +45,20 @@ function buscarStreamer() {
         const episodios = episodiosDeStreamers[streamer];
         if (streamer.toLowerCase() === "crystal molly") {
             const estructuraHTML = `
-                <div class="categoria_parte_17">
-                    <img src="imagen_4.jpg" alt="Imagen descriptiva" class="categoria_imagen_parte_17">
-                    <div class="contener_boton">
-                        <button class="boton_entrar_parte_17">Entrar</button>
+                <div class="contenido_de_crystal_molly">
+                    <h2 class="crystal_molly">crystal molly</h2>
+                    <div class="categoria_parte_21">
+                        <img src="imagen_4.jpg" alt="Imagen descriptiva" class="categoria_imagen_parte_21">
+                        <div class="contener_boton">
+                            <button class="boton_entrar_parte_21">Entrar</button>
+                        </div>
+                    </div>
+                    <!--estructurando_categoria_22-->
+                    <div class="categoria_parte_22">
+                        <img src="imagen_4.jpg" alt="Imagen descriptiva" class="categoria_imagen_parte_22">
+                        <div class="contener_boton">
+                            <button class="boton_entrar_parte_22">Entrar</button>
+                        </div>
                     </div>
                 </div>
             `;
@@ -96,7 +106,6 @@ function borrarBusqueda() {
     mostrarStreamersRegistrados();
 }
 //funcionalidad_general_de_anuncio_de_squid_craft_games_3
-//funcionalidad_trailer_de_los_squid_craft_games_3
 document.addEventListener('DOMContentLoaded', function() {
     const videoPlayer = document.getElementById('videoPlayer');
     const videoTitle = document.getElementById('video-title');
@@ -144,38 +153,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
     const carousel = document.querySelector('.carousel');
-    const categoryWidth = categories[0].offsetWidth + 30; // Ancho de las categorías + margen
+    const categoryWidth = categories[0].offsetWidth + 30;
     let currentIndex = 0;
-
-    // Verifica si prevBtn y nextBtn existen
     if (prevBtn && nextBtn) {
-        // Función para actualizar la categoría activa (también se desplaza)
         function updateCategory() {
-            // Actualiza la clase activa
             categories.forEach((category, index) => {
                 category.classList.remove('active');
                 if (index === currentIndex) {
                     category.classList.add('active');
                 }
             });
-
-            // Mueve el carrusel
             carousel.style.transform = `translateX(-${currentIndex * categoryWidth}px)`;
         }
-
-        // Evento para el botón "Anterior"
         prevBtn.addEventListener('click', () => {
             currentIndex = (currentIndex === 0) ? categories.length - 1 : currentIndex - 1;
             updateCategory();
         });
-
-        // Evento para el botón "Siguiente"
         nextBtn.addEventListener('click', () => {
             currentIndex = (currentIndex === categories.length - 1) ? 0 : currentIndex + 1;
             updateCategory();
         });
-
-        // Inicializa la primera categoría como activa
         updateCategory();
     } else {
         console.error('No se pudo encontrar el botón anterior o siguiente.');
