@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden;
+    background: gray; 
+}
+.video-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.custom-video-player {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; 
+}
+.video-container video {
+    width: 100vw; 
+    height: 100vh;
+    object-fit: cover; 
+}
